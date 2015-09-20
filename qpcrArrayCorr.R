@@ -7,6 +7,12 @@
 # and currently only functions on three hypothetical genes (to be fixed), sg1, pom210 and setd7
 
 # models first to obtain R-squared
+genes <- c("sg1","pom210","setd7")
+
+#for (gene in 1:3) {
+#         lm(results) } 
+         
+
 sg1 <- lm(results$C042R126 ~ results$sg1)
 pom210 <- lm(results$C088R114 ~ results$pom210)
 setd7 <- lm(results$C263R087 ~ results$setd7)
